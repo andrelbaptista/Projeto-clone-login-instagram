@@ -1,0 +1,223 @@
+
+/* inicialização do CSS */
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  Helvetica;
+}
+
+/* variáveis */
+:root {
+    --cor1: #fafafa;
+    --cor2: #fff;
+    --cor3: #dbdbdb;
+    --cor4: #b2dffc;
+    --cor5: #bbb;
+    --cor6: #385185;
+    --cor7: #373737;
+    --cor8: #262626;
+    --cor9: #4a95f6;
+    --cor10: #8e8e8e:
+}
+
+/* página */
+body {
+    background-color: var(--cor1) ;
+}
+
+/* containers */
+#main-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#telefones-container,
+#login-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#telefones-container {
+    text-align: right;
+}
+
+#telefones-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#login-container {
+    text-align: center;
+}
+
+/* formulário */
+#acessos {
+    background-color: var(--cor2);
+    border: 1px solid var(--cor3);
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+#logo-insta {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#campos {
+    margin-top: 20px;
+}
+
+#campos input {
+    display: block;
+    width: 268px;
+    font-size: 12px;
+    padding: 12px 9px;
+    border-radius: 3px;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor3);
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+#campos input[type="submit"] {
+    background-color: var(--cor4);
+    color: var(--cor2);
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .8;
+}
+
+#campos input[type="submit"]:hover {
+    opacity: 1;
+    color: var(--cor2);
+}
+
+/* separador */
+#separador {
+    position: relative;
+}
+
+.linha {
+    border-top: 1px solid var(--cor3);
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+#separador span {
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+/* login facebbok */
+#login {
+    margin-bottom: 25px;
+}
+
+#login a {
+    color: var(--cor6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#login span {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* esqueceu a senha do facebook */
+#senha {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: var(--cor7);
+}
+
+/* cadastro container */
+#cadastro-container {
+    background-color: var(--cor2);
+    border: 1px solid var(--cor3);
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+#cadastro-container p {
+    font-size: 14px;
+    color: var(--cor8);
+}
+
+#cadastro-container a {
+    font-weight: bold;
+    color: var(--cor9);
+}
+
+#aplicativo-container {
+    text-align: center;
+    width: 350px;
+}
+
+#aplicativo-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#aplicativo-container img {
+    width: 136px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* rodapé */
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #links {
+    display: flex;
+    list-style: none;
+}
+
+footer li {
+    margin-right: 10px;
+}
+
+footer a,
+#copyright {
+    color: var(--cor10);
+    font-size: 12px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
